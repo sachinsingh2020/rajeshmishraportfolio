@@ -1,25 +1,53 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import SideBarMenu from './Components/SideBarMenu';
+import { Toaster } from 'react-hot-toast';
+import Experience from './Components/Experience';
+import AboutMe from './Components/AboutMe';
+import Education from './Components/Education';
+import Publications from './Components/Publications';
+import Gallery from './Components/Gallery';
+import Achievements from './Components/Achievements';
 
-function App() {
+const App = () => {
+  const [sidebarCollapsed, setSidebarCollapsed] = useState(true);
+  const [sidebarWidth, setSidebarWidth] = useState('0px');
+
+  const updateSidebarWidth = () => {
+    setSidebarWidth(sidebarCollapsed ? '0px' : '9.35rem');
+  };
+
+  useEffect(() => {
+    updateSidebarWidth();
+  }, [sidebarCollapsed]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <Router>
+      <div style={{ display: 'flex', minHeight: '100vh', backgroundColor: '#fafafa' }}>
+        <SideBarMenu onCollapse={(collapsed) => {
+          setSidebarCollapsed(collapsed);
+          updateSidebarWidth();
+        }} />
+        <div
+          style={{
+            flex: 1,
+            marginLeft: `calc(${sidebarWidth})`,
+            transition: 'margin-left 0.3s ease',
+          }}
         >
-          Learn React
-        </a>
-      </header>
-    </div>
+          <Routes>
+            <Route path="/experience" element={<Experience />} />
+            <Route path="/aboutme" element={<AboutMe />} />
+            <Route path="/education" element={<Education />} />
+            <Route path="/publications" element={<Publications />} />
+            <Route path="/achievements" element={<Achievements />} />
+            <Route path="/gallery" element={<Gallery />} />
+          </Routes>
+        </div>
+      </div>
+      <Toaster />
+    </Router>
   );
-}
+};
 
 export default App;
