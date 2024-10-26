@@ -105,7 +105,7 @@ const Experience = () => {
     };
 
     return (
-        <div className="min-h-screen w-full  h-[100vh] overflow-auto bg-[#e2e9ff] px-4 py-6 sm:px-6 md:px-8 lg:px-16">
+        <div className="min-h-screen w-full  h-[100vh] overflow-auto bg-[#e6f7ff] px-4 py-6 sm:px-6 md:px-8 lg:px-16">
             <div className="font-sans">
                 <h1 className="mb-8 border-b border-black pb-2 text-center text-2xl font-bold text-black sm:text-3xl md:text-4xl">
                     Work Experience

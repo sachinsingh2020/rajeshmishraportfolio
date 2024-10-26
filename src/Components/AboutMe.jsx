@@ -2,8 +2,8 @@ import React from 'react';
 
 const AboutMe = () => {
     return (
-        <div className="min-h-screen flex items-center justify-center bg-gray-100">
-            <div className="w-full h-[100vh] overflow-auto py-4 md:py-8 px-4 md:px-16 border border-gray-300 rounded-lg bg-white shadow-lg bg-[#e2e9ff]">
+        <div className="min-h-screen flex items-center justify-center bg-[#e6f7ff]">
+            <div className="w-full h-[100vh] overflow-auto py-4 md:py-8 px-4 md:px-16 border border-gray-300 rounded-lg shadow-lg bg-[#e6f7ff]">
                 <h1 className="text-3xl md:text-5xl font-bold text-black text-center mb-4 md:mb-6">Dr. Rajesh Mishra</h1>
                 <h2 className="text-xl md:text-3xl text-blue-600 text-center mb-3 md:mb-4 font-semibold">Assistant Professor</h2>
                 <h3 className="text-lg md:text-2xl text-green-600 text-center mb-2 md:mb-4 font-semibold">Department of Electronics and Communication Engineering</h3>

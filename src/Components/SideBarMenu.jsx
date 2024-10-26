@@ -39,6 +39,10 @@ const SideBarMenu = ({ onCollapse }) => {
         onCollapse(newCollapsedState);
     };
 
+    useEffect(() => {
+        toggleSidebar();
+    }, [])
+
     const handleMenuItemClick = (item) => {
         setActiveMenuItem(item);
         if (deviceType === 'mobile') {

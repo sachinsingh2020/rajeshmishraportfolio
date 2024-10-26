@@ -51,7 +51,7 @@ const Education = () => {
     };
 
     return (
-        <div className="w-full h-[100vh] overflow-auto py-8 px-4 md:px-16 bg-[#e2e9ff]">
+        <div className="w-full h-[100vh] overflow-auto py-8 px-4 md:px-16 bg-[#e6f7ff]">
             <h1 className="text-center text-black border-b border-black pb-2 text-3xl md:text-4xl font-bold mb-8">Education</h1>
             {educationDetails.map((edu, index) => (
                 <div key={index} style={cardStyle} className="border-2 border-blue-500 rounded-lg p-4 md:p-5 mb-5 bg-[#e6f7ff] shadow-lg transition duration-300">

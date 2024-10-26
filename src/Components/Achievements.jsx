@@ -2,7 +2,7 @@ import React from 'react';
 
 const Achievements = () => {
     return (
-        <div className="w-full h-[100vh] overflow-auto py-8 px-4 md:px-16 text-[#50596a] bg-[#e2e9ff]">
+        <div className="w-full h-[100vh] overflow-auto py-8 px-4 md:px-16 text-[#50596a] bg-[#e6f7ff]">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center text-black border-b border-black pb-2">
                 Awards and Achievements
             </h2>
