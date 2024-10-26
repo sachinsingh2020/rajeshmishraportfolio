@@ -2,9 +2,11 @@ import React from 'react';
 
 const Achievements = () => {
     return (
-        <div className="w-full h-[100vh]  overflow-auto py-8 px-16  text-white bg-[#3b85ee]">
-            <h2 className="text-4xl font-bold mb-6 text-center text-gray-200 border-b border-white pb-2">Awards and Achievements</h2>
-            <ul className="text-lg text-gray-800">
+        <div className="w-full h-[100vh] overflow-auto py-8 px-4 md:px-16 text-white bg-[#3b85ee]">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center text-gray-200 border-b border-white pb-2">
+                Awards and Achievements
+            </h2>
+            <ul className="text-base md:text-lg text-gray-800">
                 <li className="mb-4 border-b border-white pb-2 text-white">
                     <strong className="text-yellow-300">DST INSPIRE Fellowship:</strong> Selected for the prestigious DST INSPIRE FELLOWSHIP in "Engineering Sciences." Awarded by the Department of Science and Technology, Govt. of India.
                 </li>
@@ -25,7 +27,7 @@ const Achievements = () => {
                         </li>
                     </ul>
                 </li>
-                <li className="mb-4  text-white">
+                <li className="mb-4 text-white">
                     <strong className="text-yellow-300">GRANTS:</strong>
                     <ul className="list-disc list-inside ml-5">
                         <li>Featured in the Top 2% Scientist list (2024) in the category of "Artificial Intelligence and Image Processing."</li>

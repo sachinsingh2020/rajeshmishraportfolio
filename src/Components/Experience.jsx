@@ -83,7 +83,7 @@ const Experience = () => {
     const cardStyle = {
         border: '2px solid #4A90E2',
         borderRadius: '8px',
-        margin: '20px',
+        margin: '20px 0',
         padding: '15px',
         backgroundColor: '#E6F7FF',
         boxShadow: '0 4px 10px rgba(0,0,0,0.2)',
@@ -92,72 +92,64 @@ const Experience = () => {
 
     const titleStyle = {
         color: '#3E8E41',
-        fontSize: '24px',
         fontWeight: 'bold',
     };
 
     const dateStyle = {
         color: '#A3A3A3',
-        fontSize: '20px',
     };
 
     const contentStyle = {
-        fontSize: '18px',
         color: '#333',
     };
 
     return (
-        <div >
-            <div
-                className='w-full h-[100vh]  overflow-auto py-8 px-16 bg-[#3b85ee]'
-                style={{ fontFamily: 'Arial, sans-serif' }}>
-                <h1
-                    className='border-b border-white pb-2 '
-                    style={{ textAlign: 'center', color: 'white', fontSize: '36px', fontWeight: "bold" }}>Work Experience</h1>
+        <div className="min-h-screen w-full  h-[100vh] overflow-auto bg-[#3b85ee] px-4 py-6 sm:px-6 md:px-8 lg:px-16">
+            <div className="font-sans">
+                <h1 className="mb-8 border-b border-white pb-2 text-center text-2xl font-bold text-white sm:text-3xl md:text-4xl">
+                    Work Experience
+                </h1>
+
                 {experiences.map((exp, index) => (
-                    <div key={index} style={cardStyle}>
-                        <div style={titleStyle}>{exp.title}</div>
-                        <div style={dateStyle}>{exp.date}</div>
-                        <div style={contentStyle}>{exp.institution}</div>
+                    <div key={index} style={cardStyle} className="mb-4 rounded-lg border border-gray-300 p-3 shadow-md transition duration-300 sm:p-4">
+                        <div style={titleStyle} className="text-lg font-semibold sm:text-xl">{exp.title}</div>
+                        <div style={dateStyle} className="text-sm sm:text-base md:text-lg">{exp.date}</div>
+                        <div style={contentStyle} className="text-sm sm:text-base md:text-lg">{exp.institution}</div>
                         {exp.subjects && (
-                            <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
+                            <ul className="ml-4 list-disc text-sm sm:text-base md:text-lg">
                                 {exp.subjects.map((subject, i) => (
                                     <li key={i} style={contentStyle}>{subject}</li>
                                 ))}
                             </ul>
                         )}
-                        {exp.project && <div style={contentStyle}>Project: {exp.project}</div>}
-                        {exp.supervisor && <div style={contentStyle}>{exp.supervisor}</div>}
+                        {exp.project && <div style={contentStyle} className="text-sm sm:text-base md:text-lg">Project: {exp.project}</div>}
+                        {exp.supervisor && <div style={contentStyle} className="text-sm sm:text-base md:text-lg">{exp.supervisor}</div>}
                     </div>
                 ))}
 
-                <h1 className="text-center text-white border-b border-white text-4xl font-bold mb-8 mt-16">Miscellaneous Experience</h1>
+                <h1 className="mb-8 mt-12 border-b border-white pb-2 text-center text-2xl font-bold text-white sm:text-3xl md:text-4xl">
+                    Miscellaneous Experience
+                </h1>
 
-                <div
-                    className='bg-[#E6F7FF] border-2 border-blue-500 rounded-lg p-5 mb-5 shadow-lg transition duration-300'>
-
-                    <h2 className="text-green-600 text-2xl font-bold">Professional Affiliations</h2>
-                    <ul className="list-decimal pl-5 mb-5">
+                <div className="mb-5 rounded-lg border-2 border-blue-500 bg-[#E6F7FF] p-3 shadow-lg transition duration-300 sm:p-4 md:p-5">
+                    <h2 className="text-lg font-bold text-green-600 sm:text-xl md:text-2xl">Professional Affiliations</h2>
+                    <ul className="ml-4 list-decimal text-sm sm:text-base md:text-lg">
                         {affiliations.map((affiliation, index) => (
-                            <li key={index} className="text-lg text-gray-800">{affiliation}</li>
+                            <li key={index} className="text-gray-800">{affiliation}</li>
                         ))}
                     </ul>
                 </div>
 
-                <div
-                    className='bg-[#E6F7FF] border-2 border-blue-500 rounded-lg p-5 mb-5 shadow-lg transition duration-300'
-                >
-                    <h2 className="text-green-600 text-2xl font-bold">Reviewer</h2>
-                    <ul className="list-none pl-5">
+                <div className="mb-5 rounded-lg border-2 border-blue-500 bg-[#E6F7FF] p-3 shadow-lg transition duration-300 sm:p-4 md:p-5">
+                    <h2 className="text-lg font-bold text-green-600 sm:text-xl md:text-2xl">Reviewer</h2>
+                    <ul className="ml-4 text-sm sm:text-base md:text-lg">
                         {reviewers.map((reviewer, index) => (
-                            <li key={index} className="text-lg text-gray-800">• {reviewer}</li>
+                            <li key={index} className="text-gray-800">• {reviewer}</li>
                         ))}
                     </ul>
                 </div>
             </div>
-
         </div>
-
     );
 };
 
