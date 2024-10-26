@@ -264,26 +264,55 @@ const publicationsData = [
     },
 ];
 
+const cardStyle = {
+    border: '2px solid #50596a',
+    borderRadius: '8px',
+    margin: '20px 0',
+    padding: '15px',
+    backgroundColor: '#eff1f3',
+    boxShadow: '0 4px 10px rgba(0,0,0,0.2)',
+    transition: '0.3s',
+};
+
+const titleStyle = {
+    color: '#3E8E41',
+    fontWeight: 'bold',
+};
+
+const instituteStyle = {
+    color: '#717171',
+    fontWeight: '500',
+};
+
+const dateStyle = {
+    color: '#A3A3A3',
+};
+
+const contentStyle = {
+    color: '#333',
+    fontWeight: '500',
+};
+
 const Publications = () => {
     return (
-        <div className="h-[100vh] overflow-auto py-8 px-4 md:px-16 bg-gradient-to-r from-blue-500 to-indigo-500 text-white">
-            <h1 className="text-3xl md:text-4xl font-bold mb-6">Publications</h1>
-            <h2 className="text-2xl md:text-3xl font-semibold mb-4">Journals</h2>
+        <div className="h-[100vh] bg-[#e6f7ff] overflow-auto py-8 px-4 md:px-16  text-white">
+            <h1 className="text-3xl md:text-4xl font-bold mb-6 text-center text-black border-b border-black pb-2">Publications</h1>
+            <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-[#222222]">Journals</h2>
             {publicationsData
                 .filter((pub) => pub.type !== "Pre-print")
                 .map((pub, index) => (
-                    <div key={index} className="mb-5 bg-gray-800 p-4 rounded-md">
-                        <h3 className="text-xl md:text-2xl font-bold">{pub.title}</h3>
-                        <p className="text-base md:text-lg">{pub.authors} ({pub.year})</p>
-                        <p className="font-semibold">Journal: {pub.journal}</p>
-                        <p className="font-semibold">Altmetric Score: {pub.altmetric}</p>
+                    <div key={index} style={cardStyle} className="mb-5 bg-[#a0add0] p-4 rounded-md">
+                        <h3 style={titleStyle} className="text-xl md:text-2xl font-bold ">{pub.title}</h3>
+                        <p style={contentStyle} className="text-base md:text-lg">{pub.authors} ({pub.year})</p>
+                        <p style={contentStyle} className="font-semibold">Journal: {pub.journal}</p>
+                        <p style={contentStyle} className="font-semibold">Altmetric Score: {pub.altmetric}</p>
                         <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4 mt-2">
                             {pub.webLink && (
                                 <a
                                     href={pub.webLink}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-center"
+                                    className="bg-[#196ee6] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-center"
                                 >
                                     Visit Web Page
                                 </a>
@@ -302,7 +331,7 @@ const Publications = () => {
                                 href={pub.link}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded text-center"
+                                className="bg-[#e35484] hover:bg-red-700 text-white font-bold py-2 px-4 rounded text-center"
                             >
                                 Download
                             </a>

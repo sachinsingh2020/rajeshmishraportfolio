@@ -81,11 +81,11 @@ const Experience = () => {
     ];
 
     const cardStyle = {
-        border: '2px solid #4A90E2',
+        border: '2px solid #50596a',
         borderRadius: '8px',
         margin: '20px 0',
         padding: '15px',
-        backgroundColor: '#E6F7FF',
+        backgroundColor: '#eff1f3',
         boxShadow: '0 4px 10px rgba(0,0,0,0.2)',
         transition: '0.3s',
     };
@@ -101,12 +101,13 @@ const Experience = () => {
 
     const contentStyle = {
         color: '#333',
+        fontWeight: '500',
     };
 
     return (
-        <div className="min-h-screen w-full  h-[100vh] overflow-auto bg-[#3b85ee] px-4 py-6 sm:px-6 md:px-8 lg:px-16">
+        <div className="min-h-screen w-full  h-[100vh] overflow-auto bg-[#e2e9ff] px-4 py-6 sm:px-6 md:px-8 lg:px-16">
             <div className="font-sans">
-                <h1 className="mb-8 border-b border-white pb-2 text-center text-2xl font-bold text-white sm:text-3xl md:text-4xl">
+                <h1 className="mb-8 border-b border-black pb-2 text-center text-2xl font-bold text-black sm:text-3xl md:text-4xl">
                     Work Experience
                 </h1>
 
@@ -127,22 +128,22 @@ const Experience = () => {
                     </div>
                 ))}
 
-                <h1 className="mb-8 mt-12 border-b border-white pb-2 text-center text-2xl font-bold text-white sm:text-3xl md:text-4xl">
+                <h1 className="mb-8 mt-12 border-b border-black pb-2 text-center text-2xl font-bold text-black sm:text-3xl md:text-4xl">
                     Miscellaneous Experience
                 </h1>
 
-                <div className="mb-5 rounded-lg border-2 border-blue-500 bg-[#E6F7FF] p-3 shadow-lg transition duration-300 sm:p-4 md:p-5">
-                    <h2 className="text-lg font-bold text-green-600 sm:text-xl md:text-2xl">Professional Affiliations</h2>
-                    <ul className="ml-4 list-decimal text-sm sm:text-base md:text-lg">
+                <div style={cardStyle} className="mb-4 rounded-lg border border-gray-300 p-3 shadow-md transition duration-300 sm:p-4">
+                    <h2 style={titleStyle} className="text-lg font-bold text-green-600 sm:text-xl md:text-2xl">Professional Affiliations</h2>
+                    <ul style={contentStyle} className="ml-4 list-decimal text-sm sm:text-base md:text-lg">
                         {affiliations.map((affiliation, index) => (
                             <li key={index} className="text-gray-800">{affiliation}</li>
                         ))}
                     </ul>
                 </div>
 
-                <div className="mb-5 rounded-lg border-2 border-blue-500 bg-[#E6F7FF] p-3 shadow-lg transition duration-300 sm:p-4 md:p-5">
+                <div style={cardStyle} className="mb-5 rounded-lg border-2 border-blue-500 bg-[#E6F7FF] p-3 shadow-lg transition duration-300 sm:p-4 md:p-5">
                     <h2 className="text-lg font-bold text-green-600 sm:text-xl md:text-2xl">Reviewer</h2>
-                    <ul className="ml-4 text-sm sm:text-base md:text-lg">
+                    <ul style={contentStyle} className="ml-4 text-sm sm:text-base md:text-lg">
                         {reviewers.map((reviewer, index) => (
                             <li key={index} className="text-gray-800">• {reviewer}</li>
                         ))}

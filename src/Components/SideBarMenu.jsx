@@ -103,7 +103,7 @@ const SideBarMenu = ({ onCollapse }) => {
                             '&.active': {
                                 backgroundColor: 'red',
                                 color: '#fff',
-                                borderLeft: '5px solid #ab40ff',
+                                borderLeft: '5px solid green',
                             },
                             '@media (max-width: 640px)': {
                                 marginTop: '3px',

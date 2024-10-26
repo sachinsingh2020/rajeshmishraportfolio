@@ -2,33 +2,33 @@ import React from 'react';
 
 const Achievements = () => {
     return (
-        <div className="w-full h-[100vh] overflow-auto py-8 px-4 md:px-16 text-white bg-[#3b85ee]">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center text-gray-200 border-b border-white pb-2">
+        <div className="w-full h-[100vh] overflow-auto py-8 px-4 md:px-16 text-[#50596a] bg-[#e2e9ff]">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center text-black border-b border-black pb-2">
                 Awards and Achievements
             </h2>
-            <ul className="text-base md:text-lg text-gray-800">
-                <li className="mb-4 border-b border-white pb-2 text-white">
-                    <strong className="text-yellow-300">DST INSPIRE Fellowship:</strong> Selected for the prestigious DST INSPIRE FELLOWSHIP in "Engineering Sciences." Awarded by the Department of Science and Technology, Govt. of India.
+            <ul className="text-base md:text-lg text-[#50596a]">
+                <li className="mb-4 border-b border-[#50596a] pb-2 text-[#50596a] font-semibold">
+                    <strong className="text-red-700 font-bold">DST INSPIRE Fellowship:</strong> Selected for the prestigious DST INSPIRE FELLOWSHIP in "Engineering Sciences." Awarded by the Department of Science and Technology, Govt. of India.
                 </li>
-                <li className="mb-4 border-b border-white text-white pb-2">
-                    <strong className="text-yellow-300">GOLD MEDALIST:</strong> Throughout topper in B.Tech. and M.Tech.
+                <li className="mb-4 border-b border-[#50596a] text-[#50596a] pb-2 font-semibold">
+                    <strong className="text-red-700 font-bold">GOLD MEDALIST:</strong> Throughout topper in B.Tech. and M.Tech.
                 </li>
-                <li className="mb-4 border-b border-white pb-2 text-white">
-                    <strong className="text-yellow-300">NATIONAL LEVEL EXAM QUALIFIED:</strong> GATE-2017, UGC NET 2016, UGC NET 2017, UGC NET 2018.
+                <li className="mb-4 border-b border-[#50596a] pb-2 text-[#50596a] font-semibold">
+                    <strong className="text-red-700 font-bold">NATIONAL LEVEL EXAM QUALIFIED:</strong> GATE-2017, UGC NET 2016, UGC NET 2017, UGC NET 2018.
                 </li>
-                <li className="mb-4 border-b border-white pb-2 text-white">
-                    <strong className="text-yellow-300">RANK IN MATLAB CENTRAL:</strong>
+                <li className="mb-4 border-b border-[#50596a] pb-2 text-[#50596a] font-semibold">
+                    <strong className="text-red-700 font-bold">RANK IN MATLAB CENTRAL:</strong>
                     <ul className="list-disc list-inside ml-5">
                         <li>
-                            Rank 879 out of 112,203 (Top 1 %) in MATLAB Cody in Mathworks. (<a href="https://www.mathworks.com/matlabcentral/cody/" target="_blank" rel="noopener noreferrer" className="text-yellow-300 hover:underline">Click here</a>)
+                            Rank 879 out of 112,203 (Top 1 %) in MATLAB Cody in Mathworks. (<a href="https://www.mathworks.com/matlabcentral/cody/" target="_blank" rel="noopener noreferrer" className="text-red-700 hover:underline">Click here</a>)
                         </li>
                         <li>
-                            Rank 1187 out of 17,913 in MATLAB File Exchange in Mathworks (Over 12k downloads; <a href="https://www.mathworks.com/matlabcentral/fileexchange/" target="_blank" rel="noopener noreferrer" className="text-yellow-300 hover:underline">Click here</a>)
+                            Rank 1187 out of 17,913 in MATLAB File Exchange in Mathworks (Over 12k downloads; <a href="https://www.mathworks.com/matlabcentral/fileexchange/" target="_blank" rel="noopener noreferrer" className="text-red-700 hover:underline">Click here</a>)
                         </li>
                     </ul>
                 </li>
-                <li className="mb-4 text-white">
-                    <strong className="text-yellow-300">GRANTS:</strong>
+                <li className="mb-4 text-[#50596a] font-semibold">
+                    <strong className="text-red-700 font-bold">GRANTS:</strong>
                     <ul className="list-disc list-inside ml-5">
                         <li>Featured in the Top 2% Scientist list (2024) in the category of "Artificial Intelligence and Image Processing."</li>
                         <li>Early Career Scientist’s Travel Support Grant (Roland Schlich Travel Support) of European Geosciences Union (EGU) General Assembly 2024, Vienna, Austria.</li>
