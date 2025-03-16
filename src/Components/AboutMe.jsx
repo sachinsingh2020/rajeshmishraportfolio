@@ -52,16 +52,6 @@ const AboutMe = () => {
                 </div>
 
 
-                <div className="mb-4 md:mb-6">
-                    <h3 className="text-xl md:text-2xl font-semibold text-red-600">Research Interests:</h3>
-                    <p className="text-gray-700 mb-3 md:mb-4 text-base md:text-lg font-semibold">My research primarily focuses on:</p>
-                    <ul className="list-disc list-inside text-gray-700 mb-3 md:mb-4 text-base md:text-lg font-semibold">
-                        <li>Integrating AI and satellite data for environmental monitoring.</li>
-                        <li>Exploring new avenues in evolutionary algorithms.</li>
-                        <li>Enhancing predictive models for resource management.</li>
-                    </ul>
-                </div>
-
                 {/* <div className="mb-4 md:mb-6">
                     <h3 className="text-xl md:text-2xl font-semibold text-red-600">Publications:</h3>
                     <p className="text-gray-700 mb-3 md:mb-4 text-base md:text-lg font-semibold">
