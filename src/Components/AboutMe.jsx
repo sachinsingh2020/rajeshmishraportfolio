@@ -62,12 +62,12 @@ const AboutMe = () => {
                     </ul>
                 </div>
 
-                <div className="mb-4 md:mb-6">
+                {/* <div className="mb-4 md:mb-6">
                     <h3 className="text-xl md:text-2xl font-semibold text-red-600">Publications:</h3>
                     <p className="text-gray-700 mb-3 md:mb-4 text-base md:text-lg font-semibold">
                         I have published several papers in renowned journals, focusing on machine learning applications in environmental science and network reliability.
                     </p>
-                </div>
+                </div> */}
 
                 <div>
                     <h3 className="text-xl md:text-2xl font-semibold text-red-600">Connect with Me:</h3>
