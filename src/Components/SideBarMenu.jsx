@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Sidebar, Menu, MenuItem, sidebarClasses } from 'react-pro-sidebar';
 import { Link } from 'react-router-dom';
 import { FaToolbox } from "react-icons/fa6";
-import rajeshSirImage from "../assets/rajeshSirImage.jpeg";
+// import rajeshSirImage from "../assets/rajeshSirImage.jpeg";
+import profilePic from "../assets/profilePic.jpg";
 import { FaArrowCircleRight } from "react-icons/fa";
 import { FaArrowCircleLeft } from "react-icons/fa";
 import { FaUserGraduate } from "react-icons/fa6";
@@ -77,7 +78,7 @@ const SideBarMenu = ({ onCollapse }) => {
 
                 <div className="flex flex-col items-center text-center my-3">
                     <img
-                        src={rajeshSirImage}
+                        src={profilePic}
                         alt="Menu Logo"
                         className={`transition-width duration-300 ${collapsed ? 'w-10' : 'w-[125px] md:w-40'} h-auto rounded-full border-4 border-white`}
                     />
@@ -117,8 +118,11 @@ const SideBarMenu = ({ onCollapse }) => {
                     }}
                 >
                     <MenuItem onClick={() => handleMenuItemClick('aboutme')} icon={<FaUserTie className="responsive-icon" />} component={<Link to="/aboutme" />} className="responsive-text">About Me</MenuItem>
-                    <MenuItem onClick={() => handleMenuItemClick('experience')} icon={<FaToolbox className="responsive-icon" />} component={<Link to="/experience" />} className="responsive-text">Experience</MenuItem>
+
                     <MenuItem onClick={() => handleMenuItemClick('education')} icon={<FaUserGraduate className="responsive-icon" />} component={<Link to="/education" />} className="responsive-text">Education</MenuItem>
+
+                    <MenuItem onClick={() => handleMenuItemClick('experience')} icon={<FaToolbox className="responsive-icon" />} component={<Link to="/experience" />} className="responsive-text">Experience</MenuItem>
+
                     <MenuItem onClick={() => handleMenuItemClick('publications')} icon={<VscFileSubmodule className="responsive-icon" />} component={<Link to="/publications" />} className="responsive-text">Publications</MenuItem>
                     <MenuItem onClick={() => handleMenuItemClick('achievements')} icon={<TfiCup className="responsive-icon" />} component={<Link to="/achievements" />} className="responsive-text">Achievements</MenuItem>
                     <MenuItem onClick={() => handleMenuItemClick('gallery')} icon={<HiMiniPhoto className="responsive-icon" />} component={<Link to="/gallery" />} className="responsive-text">Gallery</MenuItem>
