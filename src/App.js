@@ -8,6 +8,7 @@ import Education from './Components/Education';
 import Publications from './Components/Publications';
 import Gallery from './Components/Gallery';
 import Achievements from './Components/Achievements';
+import ReserachGuide from './Components/ReserachGuide';
 
 const App = () => {
   const [sidebarCollapsed, setSidebarCollapsed] = useState(true);
@@ -43,6 +44,7 @@ const App = () => {
             <Route path="/publications" element={<Publications />} />
             <Route path="/achievements" element={<Achievements />} />
             <Route path="/gallery" element={<Gallery />} />
+            <Route path="/researchGuide" element={<ReserachGuide />} />
           </Routes>
         </div>
       </div>

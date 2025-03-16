@@ -18,6 +18,7 @@ import { FaResearchgate } from "react-icons/fa6";
 import { FaLaptopCode } from "react-icons/fa";
 import { SiIeee } from "react-icons/si";
 import { FaUniversity } from "react-icons/fa";
+import { FaBookOpen } from "react-icons/fa";
 // import { useDispatch, useSelector } from 'react-redux';
 // import { logout } from '../redux/actions/user';
 
@@ -125,7 +126,7 @@ const SideBarMenu = ({ onCollapse }) => {
 
                     <MenuItem onClick={() => handleMenuItemClick('publications')} icon={<VscFileSubmodule className="responsive-icon" />} component={<Link to="/publications" />} className="responsive-text">Publications</MenuItem>
                     <MenuItem onClick={() => handleMenuItemClick('achievements')} icon={<TfiCup className="responsive-icon" />} component={<Link to="/achievements" />} className="responsive-text">Achievements</MenuItem>
-                    <MenuItem onClick={() => handleMenuItemClick('gallery')} icon={<HiMiniPhoto className="responsive-icon" />} component={<Link to="/gallery" />} className="responsive-text">Gallery</MenuItem>
+                    <MenuItem onClick={() => handleMenuItemClick('gallery')} icon={<FaBookOpen className="responsive-icon" />} component={<Link to="/researchGuide" />} className="responsive-text">Reserach Guidance</MenuItem>
                 </Menu>
 
                 {!collapsed && (
